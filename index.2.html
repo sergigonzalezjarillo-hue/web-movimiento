@@ -29,7 +29,7 @@
         let y = window.innerWidth / 2 - 25;
 
         function manejarOrientacion(evento){
-            let gamma = evento.gamma; //inclinacion izquierda/derecha (eje x)
+            let gamma = evento.gamma; //inclinacion izquierda/derecha 
             let beta = evento.beta; //inclinacion delante/atras
 
             //ahora multiplico para cuanto mas gamma o beta haya....mas rapido vaya
@@ -42,8 +42,8 @@
             if(x > window.innerWidth - 50) { 
                 x = window.innerWidth - 50; 
             }
-            if(y > window.innerWidth - 50) { 
-                y = window.innerWidth - 50; 
+            if(y > window.innerHeight - 50) { 
+                y = window.innerHeight - 50; 
             }
 
             pelota.style.left = x + 'px';
